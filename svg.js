@@ -30,6 +30,7 @@ function CreateSVGObject(parent, id, attributes) {
 }
 
 function CreateSVGElement(attributes) {
+  attributes.xmlns = SVGNS;
   return CreateSVGObject(document.body, "svg", attributes);
 }
 
