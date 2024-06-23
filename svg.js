@@ -83,6 +83,9 @@ function CreateSVGTextPath(parent, href, text, attributes = {}) {
   return element;
 }
 
+
+
+// Paths
 class SVGPathOperation {
   constructor(id, args) {
     this.id = id;
