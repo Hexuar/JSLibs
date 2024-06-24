@@ -124,6 +124,10 @@ function Fill(style) {
     Draw.ctx.fillRect(0, 0, Draw.canvas.width, Draw.canvas.height);
 }
 
+function Clear() {
+    Draw.ctx.clearRect(0, 0, Draw.canvas.width, Draw.canvas.height);
+}
+
 function StrokePolygon(points, style, lineWidth) {
     Draw.ctx.strokeStyle = style;
     Draw.ctx.lineWidth = lineWidth;
