@@ -29,9 +29,9 @@ function CreateSVGObject(parent, id, attributes) {
   return element;
 }
 
-function CreateSVGElement(attributes) {
+function CreateSVGElement(parent = document.body, attributes) {
   attributes.xmlns = SVGNS;
-  return CreateSVGObject(document.body, "svg", attributes);
+  return CreateSVGObject(parent, "svg", attributes);
 }
 
 function CreateSVGLine(parent, posA, posB, stroke, strokeWidth, attributes = {}) {
