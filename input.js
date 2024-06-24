@@ -146,11 +146,12 @@ function UpdateInput() {
     key.released = false;
   });
 
-  if (navigator.getGamepads().length != 0) {
-    for (let i = 0; i < navigator.getGamepads().length; i++) {
-      const gamepad = navigator.getGamepads()[i];
+  let gamepads = navigator.getGamepads();
+  if (gamepads.length != 0) {
+    for (let i = 0; i < gamepads.length; i++) {
+      const gamepad = gamepads[i];
+      if(gamepad == null) continue;
       HandleGamepadButtons(gamepad.buttons, i);
-
     }
   }
 
