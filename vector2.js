@@ -45,6 +45,7 @@ class Vector2 {
             this.x /= v;
             this.y /= v;
         }
+        return this;
     }
     dot(v) {
         return this.x * v.x + this.y * v.y;
